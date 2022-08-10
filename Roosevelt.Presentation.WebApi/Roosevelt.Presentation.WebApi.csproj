@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-        <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;/packages</RestoreSources>
+        <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;../packages</RestoreSources>
     </PropertyGroup>
 
     <ItemGroup>
