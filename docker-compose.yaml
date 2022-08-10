@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  mariadb:
+    image: mariadb
+    restart: on-failure
+    environment:
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    ports:
+      - "33060:3306"
+  webapi:
+    container_name: roosevelt-webapi
+    links:
+      - mariadb
+    build:
+      dockerfile: Roosevelt.Presentation.WebApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:Default: "server=mariadb;user=root;password=${MARIADB_ROOT_PASSWORD};database=roosevelt"
+    restart: on-failure
+    ports:
+      - "5001:443"
+      - "5002:80"
+  migrator:
+    container_name: roosevelt-migrator
+    links:
+      - mariadb
+    build:
+      dockerfile: Roosevelt.DatabaseMigrator/Dockerfile
+    environment:
+      ConnectionStrings:Default: "server=mariadb;user=root;password=${MARIADB_ROOT_PASSWORD};database=roosevelt"
+    
