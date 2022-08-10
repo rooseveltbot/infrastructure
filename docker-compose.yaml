@@ -9,6 +9,10 @@ services:
       MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
     ports:
       - "33060:3306"
+    healthcheck:
+      test: mysqladmin ping -h localhost -u $$MARIADB_USER --password=$$MARIADB_PASSWORD
+      interval: 1s
+      retries: 120
   webapi:
     container_name: roosevelt-webapi
     links:
@@ -30,4 +34,7 @@ services:
       dockerfile: Roosevelt.DatabaseMigrator/Dockerfile
     environment:
       ConnectionStrings:Default: "server=mariadb;user=root;password=${MARIADB_ROOT_PASSWORD};database=roosevelt"
+    depends_on:
+      mariadb:
+        condition: service_healthy
     
