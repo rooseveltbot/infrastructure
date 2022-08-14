@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;../packages</RestoreSources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Roosevelt.Module.Plugin.Application\Roosevelt.Module.Plugin.Application.csproj" />
+      <ProjectReference Include="..\Roosevelt.Module.Plugin.Domain\Roosevelt.Module.Plugin.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

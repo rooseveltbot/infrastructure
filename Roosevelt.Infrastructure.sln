@@ -12,6 +12,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Common.Persistenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Infrastructure.AspNetCore", "Roosevelt.Infrastructure.AspNetCore\Roosevelt.Infrastructure.AspNetCore.csproj", "{87A4774A-A7AB-4AC0-9944-DBB2C4C10CD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{03EC46DD-490A-4A55-A587-A2C646F05750}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugin", "Plugin", "{645BF464-A283-46D9-BB86-7C732E038BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Module.Plugin", "Roosevelt.Module.Plugin\Roosevelt.Module.Plugin.csproj", "{E963F692-DC1A-45D5-8F92-7772E1825157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Module.Plugin.Presentation", "Roosevelt.Module.Plugin.Presentation\Roosevelt.Module.Plugin.Presentation.csproj", "{BE1A1B26-4AA3-402F-97DF-26C0C6E4166A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Module.Plugin.Domain", "Roosevelt.Module.Plugin.Domain\Roosevelt.Module.Plugin.Domain.csproj", "{58A50636-5ACC-4804-BC7A-825E24B4484F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Module.Plugin.Persistence", "Roosevelt.Module.Plugin.Persistence\Roosevelt.Module.Plugin.Persistence.csproj", "{5870AF60-E3C8-4CE0-B785-0F85DC138AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Module.Plugin.Application", "Roosevelt.Module.Plugin.Application\Roosevelt.Module.Plugin.Application.csproj", "{CDEFD113-B575-4FA9-94E1-B28EB219CA40}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.DatabaseMigrator", "Roosevelt.DatabaseMigrator\Roosevelt.DatabaseMigrator.csproj", "{C43BE0A8-F4C3-47BF-88D3-A1982DD04E18}"
 EndProject
 Global
