@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Roosevelt.Common.Persistence.EntityFramework;
+using Roosevelt.Infrastructure.AspNetCore.Modular.Extensions;
 
 var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: true)
@@ -12,6 +13,7 @@ var config = new ConfigurationBuilder()
 var serviceProvider = new ServiceCollection()
     .AddSingleton<IConfiguration>(config)
     .AddLogging(static builder => builder.AddConsole())
+    .AddModule<Roosevelt.Module.Plugin.Startup>()
     .BuildServiceProvider();
 
 var logger = serviceProvider.GetRequiredService<ILoggerFactory>().CreateLogger<Program>();

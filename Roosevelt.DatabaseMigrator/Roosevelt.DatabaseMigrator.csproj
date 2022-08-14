@@ -11,6 +11,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Roosevelt.Common.Persistence.EntityFramework\Roosevelt.Common.Persistence.EntityFramework.csproj" />
       <ProjectReference Include="..\Roosevelt.Infrastructure.AspNetCore\Roosevelt.Infrastructure.AspNetCore.csproj" />
+      <ProjectReference Include="..\Roosevelt.Module.Plugin\Roosevelt.Module.Plugin.csproj" />
     </ItemGroup>
 
     <ItemGroup>
