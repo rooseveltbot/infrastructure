@@ -18,7 +18,7 @@ services:
     links:
       - mariadb
     build:
-      dockerfile: Roosevelt.Presentation.WebApi/Dockerfile
+      dockerfile: Roosevelt.Host.WebApi/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings:Default: "server=mariadb;user=root;password=${MARIADB_ROOT_PASSWORD};database=roosevelt"

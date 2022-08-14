@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E4FF6581-7457-485A-BD9A-A2D63CA6781E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{E4FF6581-7457-485A-BD9A-A2D63CA6781E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Presentation.WebApi", "Roosevelt.Presentation.WebApi\Roosevelt.Presentation.WebApi.csproj", "{8D9F4E1C-32FF-405F-9E9C-872F929D4171}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roosevelt.Host.WebApi", "Roosevelt.Host.WebApi\Roosevelt.Host.WebApi.csproj", "{8D9F4E1C-32FF-405F-9E9C-872F929D4171}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{87697CD9-867F-4863-93D0-94BAE5FF8EAC}"
 EndProject
