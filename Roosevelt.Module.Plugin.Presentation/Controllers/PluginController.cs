@@ -20,7 +20,7 @@ internal class PluginController : Controller
     }
 
     [HttpGet]
-    public async Task<IEnumerable<PluginViewModel>> Example()
+    public async Task<IEnumerable<PluginViewModel>> GetAllPlugins()
     {
         var plugins = await _serviceBus.Send(new GetAllPlugins());
         return _mapper.Map<IEnumerable<PluginViewModel>>(plugins);
